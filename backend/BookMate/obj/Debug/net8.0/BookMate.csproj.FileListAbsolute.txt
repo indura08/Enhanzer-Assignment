@@ -246,3 +246,4 @@ F:\intern projecrts\enhanzer-assignment-project\backend\BookMate\obj\Debug\net8.
 F:\intern projecrts\enhanzer-assignment-project\backend\BookMate\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
 F:\intern projecrts\enhanzer-assignment-project\backend\BookMate\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 F:\intern projecrts\enhanzer-assignment-project\backend\BookMate\bin\Debug\net8.0\System.Formats.Asn1.dll
+F:\intern projecrts\enhanzer-assignment-project\backend\BookMate\obj\Debug\net8.0\BookMate.sourcelink.json

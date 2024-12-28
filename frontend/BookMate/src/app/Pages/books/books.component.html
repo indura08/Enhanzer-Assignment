@@ -9,6 +9,10 @@
           Create New Book
       </button>
   </div>
+
+  <div *ngIf="books.length == 0">
+      There is no ook currently on the application
+  </div>
 </div>
 
 <div class="container-fluid">

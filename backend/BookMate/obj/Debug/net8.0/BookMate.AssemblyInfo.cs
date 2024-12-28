@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BookMate")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9c5725c897f515d5692c8be639c94acaac266c03")]
 [assembly: System.Reflection.AssemblyProductAttribute("BookMate")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BookMate")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
