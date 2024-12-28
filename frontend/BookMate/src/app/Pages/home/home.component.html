@@ -1,0 +1,217 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+<style>
+    .div-border-control{
+        word-wrap: break-word;
+    }
+
+    h1{
+        font-size: 4rem;
+    }
+
+    .first-mini-div{
+        margin-left: 30px;
+    }
+
+    .btn1{
+        border-width: 2px;
+    }
+
+    .icon-images{
+        margin-left:111px;
+    }
+
+    .btn1:hover{
+        background-color: white;
+        color: black;
+        border-color: black;
+        border-width: 2px;
+        transition: 0.3s ease-in;
+    }
+
+    .a-tags-decoration-remover{
+        text-decoration: none;
+        color: white;
+    }
+
+    hr {
+      border: none;
+      height: 2px; 
+      background-color: #49ac49; 
+      margin-right:30px;
+      margin-left: 30px; 
+    }
+
+    .Register-today-btn{
+        border-width: 2px;
+    }
+
+    .Register-today-btn:hover{
+        border-width: 2px;
+        background-color: white ;
+        color: #49ac49;
+        transition: 0.2s ease-in-out;
+    }
+
+    .image-margin{
+        margin-left: 130px;
+    }
+
+    .vertical-line{
+        border-left-width: 2px;
+        border-left-color: #49ac49;
+    }
+
+    .h4-margin{
+        margin-left:460px;
+    }
+
+    .custom-margin{
+      margin-left: 90px;
+    }
+
+    @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem; /* Smaller font for mobile devices */
+    }
+
+    .row-class{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .display-none-container {
+        display: none;
+    }
+
+    .custom-margin,
+    .image-margin {
+      margin-left: 0;
+    }
+
+    .btn1,
+    .Register-today-btn {
+      width: 100%;
+    }
+  }
+
+</style>
+
+<div>
+  <header></header>
+</div>
+
+<div class="container-fluid d-flex mb-3">
+
+    <div class="mt-5 w-50 my-auto first-mini-div">
+       <h1 class="">Open a Book, Open Your <span class="text-success">World</span></h1>
+
+        <div class="mt-4">
+            Books are bridges to the past, windows to the present, and keys to the future. Through reading, we connect to wisdom, spark creativity, and build a better understanding of the world around us. In the age of information, reading is your superpower. It helps you grow, stay informed, and dream beyond boundaries. Every book opens a door to something greater.
+        </div>
+        <div class="d-flex mb-3 mt-5">
+            <a routerLink="/books" class="btn btn-dark col mx-2 btn1" style="text-decoration: none;">See Books</a>
+            <button class="btn btn-dark col mx-2 btn1" style="text-decoration: none;" data-bs-toggle="modal" data-bs-target="#createProfile">Create a Account</button>
+        </div>
+
+    </div>
+    
+    <div class="display-none-container pt-2 mx-2 my-auto justify-content-center align-items-center w-50 div-border-control"> <!--my auto dammama eha patte div eke size wenas weddi anik eke size wenas wenne nha -->
+        <img src="assets/logo1.png" class="w-75 custom-margin"> 
+    </div>
+</div>
+
+
+<div class="d-flex bg-image container-fluid mt-3 row-class">
+    <div class="w-50 my-auto mx-2 mt-5">
+        <h1 class="mx-4 mt-5"><span class="text-warning">Why</span> BookMate?</h1>
+        <img src="assets/logo2.png" class="image-fluid w-25 position image-margin">
+    </div>
+
+    <div class="w-50 my-auto mx-2 mt-5 py-3 px-3">
+            <div class="d-flex my-auto mb-3">
+                <span class="material-symbols-outlined mx-2">verified</span>
+                <span>Platform covers any type of Book.</span><br>
+            </div>
+
+            <div class="d-flex my-auto mb-3">
+                <span class="material-symbols-outlined mx-2">verified</span>
+                <span>Navigate through our features with ease, thanks to our intuitive and user-friendly design.</span><br>
+            </div>
+
+            <div class="d-flex my-auto mb-3">
+                <span class="material-symbols-outlined mx-2">verified</span>
+                <span>Promoting digital reading reduces the need for paper, helping contribute to environmental conservation.</span><br>
+            </div>
+
+            <div class="d-flex my-auto mb-3">
+                <span class="material-symbols-outlined mx-2">verified</span>
+                <span>platform encourages users to keep learning, no matter their age or background.</span><br>
+            </div>
+
+            <div class="d-flex justify-content-center align-items-center mb-3 mt-3">
+                <button class="btn btn-dark Register-today-btn" data-bs-toggle="modal" data-bs-target="#createProfile">Create a free Account</button>
+            </div>
+        
+    </div> 
+</div>
+
+
+<div>
+    <footer></footer>
+</div>
+
+<!--User profile creation-->
+<div class="modal fade" tabindex="-1" id="createProfile">
+    <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Create A new Profile</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form class="" #createProfileForm="ngForm" (ngSubmit)="createProfile(createProfileForm)">
+                <div class="mb-2">
+                  <label class="form-label">Username</label>
+                  <input type="text" class="form-control" ngModel name="UserName">
+                </div>
+                <div class="mb-2">
+                  <label for="Title" class="form-label">Phone</label>
+                  <input type="text" class="form-control" ngModel name="Phone">
+                </div>
+  
+                <div class="mb-3">
+                  <label for="isbn" class="form-label">City</label>
+                  <input type="text" class="form-control" ngModel name="City">
+                </div>
+  
+                <div class="mb-3">
+                  <label for="author" class="form-label">Email</label>
+                  <input type="Email" class="form-control" ngModel name="Email">
+                </div>
+  
+                <div class="mb-3">
+                  <label for="publicationDate" class="form-label">Password</label>
+                  <input type="text" class="form-control" ngModel name="Password">
+                </div>
+
+                <div class="mb-3">
+                    <label for="publicationDate" class="form-label">Password Confirm</label>
+                    <input type="text" class="form-control" ngModel name="ConfirmPassword">
+                </div>
+
+                <div class="mb-3">
+                    <label for="publicationDate" class="form-label">Role (User)</label>
+                    <input type="text" class="form-control" ngModel name="Role">
+                </div>
+  
+                <button type="submit" class="btn btn-primary mt-4">Submit</button>
+              </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+  </div>
+  
